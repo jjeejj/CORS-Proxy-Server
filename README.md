@@ -9,13 +9,23 @@
 #### 示例
  
 代理服务地址为: `http://127.0.0.1:4500`
-1. `get` 请求： 实际服务地址`remoteUrl` 为 `http://ip.taobao.com/service/getIpInfo.php?ip=myip` 则请求的 `url` 为 `http://127.0.0.1:4500?remoteUrl=http://ip.taobao.com/service/getIpInfo.php?ip=myip`
-2. `post` 请求
+1. `get` 请求： 实际服务地址`remoteUrl` 为 `http://ip.taobao.com/service/getIpInfo.php?ip=myip` 
+
+则请求的 `url` 格式为 `http://127.0.0.1:4500?remoteUrl=http://ip.taobao.com/service/getIpInfo.php?ip=myip`
+
+2. `post` 请求 实际服务地址`remoteUrl` 为 `http://ip.taobao.com/service/getIpInfo2.php` ,`from` 表单的数据为 `ip=myip` 
+
+则请求的url 格式为: `http://127.0.0.1:4500?remoteUrl=http://ip.taobao.com/service/getIpInfo2.php`
+
+**其他参数和正常请求的格式一致**
+
+>需要注意的是: 若是获取本地的`ip` ，经过该代理服务获取的 `ip` 就找不准确了
  
 
 ### Features
 
 * 代理所有的方法请求
+* 允许所有的`CORS`请求
 * 代码层面支持 `https`
 
 ### 部署
