@@ -1,0 +1,25 @@
+{
+  "name": "CORS-Proxy-Server",
+  "version": "1.0.0",
+  "description": "代理转发 CORS 跨域资源请求",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjeejj/CORS-Proxy-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjeejj/CORS-Proxy-Server/issues"
+  },
+  "homepage": "https://github.com/jjeejj/CORS-Proxy-Server#readme",
+  "dependencies": {
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "superagent": "^4.0.0-beta.5"
+  }
+}
