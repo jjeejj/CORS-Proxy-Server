@@ -17,7 +17,7 @@
 
     则请求的url 格式为: `http://127.0.0.1:4500?remoteUrl=http://ip.taobao.com/service/getIpInfo2.php`
 
-**其他参数和正常请求的格式一致**
+**其他参数和正常请求的设置方式一致**
 
 
 >该代理服务,会完全复制发送CORS请求的请求头
