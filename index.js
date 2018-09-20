@@ -23,6 +23,8 @@ app.use(async (ctx,next)=>{
         //删除请求中的 host
         delete reqHeaders.host;
 
+        console.log('reqHeaders',reqHeaders);
+
         let res = await request[reqMethod](remoteUrl).set(reqHeaders).send(reqBody);;
 
         console.log('res.body || res.text',res.body, ' || ', res.text);
