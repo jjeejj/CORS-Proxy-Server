@@ -25,7 +25,7 @@ app.use(async (ctx,next)=>{
 
         console.log('reqHeaders',reqHeaders);
 
-        let res = await request[reqMethod](remoteUrl).set(reqHeaders).send(reqBody);;
+        let res = await request[reqMethod](remoteUrl).set(reqHeaders).send(reqBody);
 
         console.log('res.body || res.text',res.body, ' || ', res.text);
 
