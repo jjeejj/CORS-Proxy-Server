@@ -33,7 +33,7 @@ app.use(async (ctx,next)=>{
 
         return ctx.body = res.body && JSON.stringify(res.body) != '{}' ? res.body : res.text;
     }catch(err){
-        console.log('remoteUrl',remoteUrl, ' err ', err);
+        console.log(' err ', err);
         ctx.status = 500;
         return ctx.body =  err.message;
     };
