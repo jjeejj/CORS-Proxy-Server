@@ -28,9 +28,12 @@ app.use(async (ctx,next)=>{
         let res = await request[reqMethod](remoteUrl).set(reqHeaders).send(reqBody);
 
         console.log('res.body || res.text',res.body, ' || ', res.text);
+       
+        ctx.set('Content-Type', res.header['Content-Type'] || res.header['content-type']); //set content-type
 
         return ctx.body = res.body && JSON.stringify(res.body) != '{}' ? res.body : res.text;
     }catch(err){
+        console.log('remoteUrl',remoteUrl, ' err ', err);
         ctx.status = 500;
         return ctx.body =  err.message;
     };
