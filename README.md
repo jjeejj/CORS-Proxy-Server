@@ -23,6 +23,7 @@
 **其他参数和正常请求的设置方式一致**
 
 >该代理服务,会完全复制发送CORS请求的请求头
+
 >需要注意的是: 若是获取本地的`ip` ，经过该代理服务获取的 `ip` 就找不准确了
 
 ### Features
@@ -33,7 +34,7 @@
 
 ### 部署
 
-#### normal
+#### Normal
 
 1. `git clone git@github.com:jjeejj/CORS-Proxy-Server.git`
 2. `npm install`
